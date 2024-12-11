@@ -1,0 +1,141 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 500px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px;  /* Adjust the size of your logo */
+    height: auto;
+    object-fit: contain;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.6em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/*.chat-box {*/
+/*    height: 300px;*/
+/*    overflow-y: auto;*/
+/*    padding: 10px;*/
+/*    background-color: #f9f9f9;*/
+/*    border-radius: 8px;*/
+/*    border: 1px solid #ddd;*/
+/*    margin-bottom: 20px;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    gap: 10px;*/
+/*}*/
+
+.chat-box {
+    height: 300px;
+    overflow-y: auto; /* Allow vertical scrolling */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Stack messages vertically */
+    gap: 10px; /* Space between messages */
+}
+
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.user-input:focus {
+    border-color: #007BFF;
+}
+
+.send-btn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send-btn:hover {
+    background-color: #0056b3;
+}
+
+.send-btn:focus {
+    outline: none;
+}
+
+/* Styling for user message */
+.user-msg {
+    background-color: #d1f7ff;
+    color: #333;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    max-width: 75%;
+    align-self: flex-start; /* Align user's message to the left */
+    word-wrap: break-word;
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for bot message */
+.bot-msg {
+    background-color: #e8e8e8;
+    color: #333;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    max-width: 75%;
+    align-self: flex-end; /* Align bot's message to the right */
+    word-wrap: break-word;
+    display: flex;
+    align-items: center;
+}
+
+/*!* Optional: Add some margin and adjust message spacing *!*/
+/*.chat-box {*/
+/*    display: flex;*/
+/*    flex-direction: column-reverse;*/
+/*    gap: 10px;*/
+/*}*/
