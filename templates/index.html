@@ -8,17 +8,25 @@
 </head>
 <body>
     <div class="chat-container">
-        <div class="logo-container">
-            <img src="/static/img/logo.png" alt="Judicial Chatbot Logo" class="logo">
-        </div>
-        <h2 class="title">Judiciary Service Commission Chatbot</h2>
-
-        <div id="chat-box" class="chat-box"></div>
-        <div class="input-group">
-            <input type="text" id="user-input" placeholder="Type your question here..." class="user-input">
-            <button id="send-btn" class="send-btn">Send</button>
-        </div>
+    <div class="logo-container">
+        <img src="/static/img/logo.png" alt="Judicial Chatbot Logo" class="logo">
     </div>
+    <h2 class="title">Judiciary Service Commission Chatbot</h2>
+
+    <div id="chat-box" class="chat-box"></div>
+
+    <!-- Thinking message -->
+    <div id="loading-indicator" class="loading-indicator" style="display: none;">
+        <img src="/static/img/loading.gif" alt="Thinking..." class="loading-gif">
+        <span>Thinking...</span>
+    </div>
+
+    <div class="input-group">
+        <input type="text" id="user-input" placeholder="Type your question here..." class="user-input">
+        <button id="send-btn" class="send-btn">Send</button>
+    </div>
+</div>
+
     <script src="/static/js/script.js"></script>
 </body>
 </html>
